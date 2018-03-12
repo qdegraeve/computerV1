@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# coding: utf-8
+
+import sys
+from equation import Equation
+
+def computor(args):
+	if len(args) is not 2:
+		print("wrong format")
+		exit(1)
+	else:
+		equation = Equation(args[1])
+		print(equation)
+
+if __name__ == "__main__":
+	computor(sys.argv)
