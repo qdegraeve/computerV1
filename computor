@@ -11,6 +11,7 @@ def computor(args):
 	else:
 		equation = Equation(args[1])
 		print(equation)
+		equation.solutions()
 
 if __name__ == "__main__":
 	computor(sys.argv)
